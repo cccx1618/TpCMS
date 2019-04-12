@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>角色管理</title>
+    <link href="STATIC_ADMIN_CSS/style.css" rel="stylesheet" type="text/css" />
+    <link href="STATIC_ADMIN_CSS/other.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="STATIC_ADMIN_JS/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".click").click(function(){
+                $(".tip").fadeIn(200);
+            });
+
+            $(".tiptop a").click(function(){
+                $(".tip").fadeOut(200);
+            });
+
+            $(".sure").click(function(){
+                $(".tip").fadeOut(100);
+            });
+
+            $(".cancel").click(function(){
+                $(".tip").fadeOut(100);
+            });
+
+        });
+    </script>
+
+
+</head>
+
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="/">首页</a></li>
+        <li><a href="__URL__/index">角色管理</a></li>
+    </ul>
+</div>
+
+<div class="rightinfo">
+
+    <div class="tools">
+
+        <ul class="toolbar">
+            <li><a href="__URL__/add"><span><img src="STATIC_ADMIN_IMG/t01.png" /></span>添加</a></li>
+            <!--<li class="click"><span><img src="STATIC_ADMIN_IMG/t02.png" /></span>修改</li>-->
+            <!--<li onclick="showtip('确认批量删除吗？','__URL__/delete');"><span><img src="STATIC_ADMIN_IMG/t03.png" /></span>批量删除</li>-->
+            <!--<li><span><img src="STATIC_ADMIN_IMG/t04.png" /></span>统计</li>-->
+        </ul>
+
+
+        <!--  <ul class="toolbar1">
+              <li><span><img src="STATIC_ADMIN_IMG/t05.png" /></span>设置</li>
+          </ul>-->
+
+    </div>
+
+
+    <table class="tablelist">
+        <thead>
+        <tr>
+            <th>角色名称</th>
+            <th>职责描述</th>
+            <th>当前状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="rolelist" id="vo">
+            <tr>
+                <td>{$vo.role_name}</td>
+                <td>{$vo.role_info}</td>
+                <td><if condition="$vo['role_status'] eq 1">正常<else/><span style="color: red;">锁定</span></if></td>
+                <td><a href="__URL__/edi/role_id/{$vo.role_id}" class="tablelink actionlink">修改</a>
+                    &nbsp;|&nbsp;
+                    <if condition="$vo['role_status'] eq 1">
+                        <a onclick="changestatus({$vo.role_id},{$vo.role_status});" class="tablelink actionlink">锁定</a>
+                        <else/>
+                        <a onclick="changestatus({$vo.role_id},{$vo.role_status});" class="tablelink actionlink">解锁</a>
+                    </if>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+    <div class="pagin">{$page}</div>
+    <include file="Public:tipinfo" />
+</div>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+
+    function changestatus(m,n){
+        $.post('__URL__/changestatus',{'role_id':m,"role_status":n},function(data){
+            if(data==1){
+                showtip('操作成功');
+                location.reload();
+            }else{
+                showtip('操作失败');
+                location.reload();
+            }
+        })
+    }
+</script>
+
+</body>
+
+</html>

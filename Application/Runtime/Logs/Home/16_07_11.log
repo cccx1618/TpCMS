@@ -1,0 +1,68 @@
+[ 2016-07-11T17:04:44+08:00 ] 127.0.0.1 /index.php/Index/index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002029s ]
+NOTIC: [8] Undefined offset: 1 E:\WWW\tpcms\ThinkPHP\Library\Think\Dispatcher.class.php 第 71 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+
+[ 2016-07-11T17:04:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001486s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025239s ]
+
+[ 2016-07-11T17:05:03+08:00 ] 127.0.0.1 /index.php/Index/index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000214s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001782s ]
+NOTIC: [8] Undefined offset: 1 E:\WWW\tpcms\ThinkPHP\Library\Think\Dispatcher.class.php 第 71 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002414s ]
+
+[ 2016-07-11T17:05:03+08:00 ] 127.0.0.1 /index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003168s ]
+
+[ 2016-07-11T17:05:06+08:00 ] 127.0.0.1 /index.php/Index/index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002977s ]
+NOTIC: [8] Undefined index: name E:\WWW\tpcms\Application\Home\Controller\IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined index: pwd E:\WWW\tpcms\Application\Home\Controller\IndexController.class.php 第 14 行.
+
+[ 2016-07-11T17:05:11+08:00 ] 127.0.0.1 /index.php/Index/index3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002284s ]
+ERR: 非法操作:index3
+
+[ 2016-07-11T17:05:22+08:00 ] 127.0.0.1 /index.php/5ex/index3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000309s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002545s ]
+ERR: 无法加载控制器:5ex
+

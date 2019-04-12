@@ -1,0 +1,184 @@
+[ 2016-09-08T10:51:24+08:00 ] 127.0.0.1 /index.php/adminuser/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003014s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0090s ]
+SQL: INSERT INTO `wym_manager` (`mg_name`,`mg_role_id`,`mg_status`,`mg_addtime`,`mg_pwd`) VALUES ('吴义敏','2','1','1473303083','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002573s ]
+
+[ 2016-09-08T13:43:40+08:00 ] 127.0.0.1 /index.php/Adminuser/index
+ERR: 1054:Unknown column 'Arraymg_role_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `wym_role` WHERE role_id=Arraymg_role_id LIMIT 1  
+
+[ 2016-09-08T13:45:31+08:00 ] 127.0.0.1 /index.php/Adminuser/index
+ERR: 1054:Unknown column 'Arraymg_role_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `wym_role` WHERE role_id=Arraymg_role_id LIMIT 1  
+
+[ 2016-09-08T13:46:47+08:00 ] 127.0.0.1 /index.php/role/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+SQL: SHOW COLUMNS FROM `wym_role` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `wym_role` [ RunTime:0.0087s ]
+SQL: UPDATE `wym_role` SET `role_status`='0' WHERE `role_id` = 2 [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2016-09-08T13:46:52+08:00 ] 127.0.0.1 /index.php/role/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002657s ]
+SQL: SHOW COLUMNS FROM `wym_role` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `wym_role` [ RunTime:0.0112s ]
+SQL: UPDATE `wym_role` SET `role_status`='1' WHERE `role_id` = 2 [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002650s ]
+
+[ 2016-09-08T14:00:48+08:00 ] 127.0.0.1 /index.php/adminuser/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002311s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0104s ]
+SQL: UPDATE `wym_manager` SET `mg_status`='0' WHERE `mg_id` = 1 [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002493s ]
+
+[ 2016-09-08T14:00:52+08:00 ] 127.0.0.1 /index.php/adminuser/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002448s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0119s ]
+SQL: UPDATE `wym_manager` SET `mg_status`='1' WHERE `mg_id` = 1 [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004307s ]
+
+[ 2016-09-08T14:30:45+08:00 ] 127.0.0.1 /index.php/adminuser/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003189s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0050s ]
+SQL: UPDATE `wym_manager` SET `mg_status`='0' WHERE `mg_id` = 1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001948s ]
+
+[ 2016-09-08T14:36:13+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003072s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0052s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='2' WHERE `mg_id` = 1 [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002626s ]
+
+[ 2016-09-08T14:36:23+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002599s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0052s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏2',`mg_status`='1',`mg_role_id`='2' WHERE `mg_id` = 1 [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002083s ]
+
+[ 2016-09-08T14:36:35+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002749s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0104s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='6' WHERE `mg_id` = 1 [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004322s ]
+
+[ 2016-09-08T14:53:31+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0105s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='6' WHERE `mg_id` = 1 [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002588s ]
+
+[ 2016-09-08T14:54:29+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0114s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='6' WHERE `mg_id` = 1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002084s ]
+
+[ 2016-09-08T14:57:39+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002422s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0100s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='6' WHERE `mg_id` = 1 [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002422s ]
+
+[ 2016-09-08T14:57:44+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002871s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0062s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏2',`mg_status`='1',`mg_role_id`='6' WHERE `mg_id` = 1 [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002382s ]
+
+[ 2016-09-08T14:57:49+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002843s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0094s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='6' WHERE `mg_id` = 1 [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004139s ]
+
+[ 2016-09-08T14:58:01+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003214s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0061s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='6',`mg_pwd`='123456' WHERE `mg_id` = 1 [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001958s ]
+
+[ 2016-09-08T14:58:35+08:00 ] 127.0.0.1 /index.php/adminuser/edi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004943s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `wym_manager` [ RunTime:0.0057s ]
+SQL: UPDATE `wym_manager` SET `mg_name`='吴义敏',`mg_status`='1',`mg_role_id`='6',`mg_pwd`='e10adc3949ba59abbe56e057f20f883e' WHERE `mg_id` = 1 [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002391s ]
+

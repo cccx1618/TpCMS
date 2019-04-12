@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>权限管理</title>
+    <link href="STATIC_ADMIN_CSS/style.css" rel="stylesheet" type="text/css" />
+    <link href="STATIC_ADMIN_CSS/other.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="STATIC_ADMIN_JS/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".click").click(function(){
+                $(".tip").fadeIn(200);
+            });
+
+            $(".tiptop a").click(function(){
+                $(".tip").fadeOut(200);
+            });
+
+            $(".sure").click(function(){
+                $(".tip").fadeOut(100);
+            });
+
+            $(".cancel").click(function(){
+                $(".tip").fadeOut(100);
+            });
+
+        });
+    </script>
+
+
+</head>
+
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="/">首页</a></li>
+        <li><a href="__URL__/index">权限管理</a></li>
+    </ul>
+</div>
+
+<div class="rightinfo">
+
+    <div class="tools">
+
+        <ul class="toolbar">
+            <li><a href="__URL__/add"><span><img src="STATIC_ADMIN_IMG/t01.png" /></span>添加</a></li>
+            <!--<li class="click"><span><img src="STATIC_ADMIN_IMG/t02.png" /></span>修改</li>-->
+            <!--<li onclick="showtip('确认批量删除吗？','__URL__/delete');"><span><img src="STATIC_ADMIN_IMG/t03.png" /></span>批量删除</li>-->
+            <!--<li><span><img src="STATIC_ADMIN_IMG/t04.png" /></span>统计</li>-->
+        </ul>
+
+
+      <!--  <ul class="toolbar1">
+            <li><span><img src="STATIC_ADMIN_IMG/t05.png" /></span>设置</li>
+        </ul>-->
+
+    </div>
+
+
+    <table class="tablelist">
+        <thead>
+        <tr>
+            <th>权限名称</th>
+            <th>权限控制器</th>
+            <th>权限方法</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="authlist" id="vo">
+        <tr>
+            <td>{$vo.auth_name}</td>
+            <td>{$vo.auth_controller}</td>
+            <td>{$vo.auth_action}</td>
+            <td><a onclick="del({$vo.auth_id});" class="tablelink actionlink"> 删除</a></td>
+        </tr>
+        </volist>
+        </tbody>
+    </table>
+
+    <include file="Public:tipinfo" />
+    <include file="Public:confirm" />
+</div>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+
+    function del(n){
+       showconfirm('您确定执行当前操作吗',n);
+    }
+
+    function deltrue(n){
+        $.post('__URL__/del',{'id':n},function(data){
+            if(data==1){
+                showtip('操作成功');
+                location.reload();
+            }
+            if(data==0){
+                showtip('操作失败');
+            }
+            if(data==2){
+                showtip('此记录有子级，无法删除');
+            }
+        })
+    }
+</script>
+
+</body>
+
+</html>

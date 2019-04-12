@@ -1,0 +1,475 @@
+[ 2016-07-20T15:50:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000516s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001541s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003617s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.192178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.050159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.052124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.064394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.067349s ]
+
+[ 2016-07-20T15:50:59+08:00 ] 127.0.0.1 /index.php/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000420s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004926s ]
+
+[ 2016-07-20T15:51:00+08:00 ] 127.0.0.1 /index.php/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000416s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003645s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003931s ]
+
+[ 2016-07-20T15:51:00+08:00 ] 127.0.0.1 /index.php/index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000419s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000992s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002813s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006048s ]
+
+[ 2016-07-20T15:51:15+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000202s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002148s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0800s ]
+ERR: 1146:Table 'tpcms.wym_' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `wym_` 
+ERR: 1146:Table 'tpcms.wym_' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `wym_` 
+
+[ 2016-07-20T15:55:40+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002752s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000649s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001678s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002442s ]
+
+[ 2016-07-20T15:56:23+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000211s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004122s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000561s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001545s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002332s ]
+
+[ 2016-07-20T16:55:38+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000671s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001749s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002372s ]
+
+[ 2016-07-20T16:55:41+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000881s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002161s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000584s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002385s ]
+
+[ 2016-07-20T16:56:17+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003883s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000580s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001543s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002604s ]
+
+[ 2016-07-20T17:04:30+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000205s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000602s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001707s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005748s ]
+
+[ 2016-07-20T17:04:51+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000203s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002498s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000745s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002171s ]
+
+[ 2016-07-20T17:05:10+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000202s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002313s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000838s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002615s ]
+
+[ 2016-07-20T17:05:54+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000200s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002204s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000585s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002506s ]
+
+[ 2016-07-20T17:07:10+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000290s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003576s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000597s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001560s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002629s ]
+
+[ 2016-07-20T17:07:42+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002229s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002478s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002229s ]
+
+[ 2016-07-20T17:08:56+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002671s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000574s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+
+[ 2016-07-20T17:09:15+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002573s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000623s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001697s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003338s ]
+
+[ 2016-07-20T17:10:06+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002594s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000579s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001620s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002338s ]
+
+[ 2016-07-20T17:11:39+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002209s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001543s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002170s ]
+
+[ 2016-07-20T17:12:05+08:00 ] 127.0.0.1 /index.php/auth/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002056s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wym_auth`  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\WWW\tpcms\Application\Common\Common\function.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000571s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002080s ]
+

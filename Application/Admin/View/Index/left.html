@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link href="STATIC_ADMIN_CSS/style.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="STATIC_ADMIN_JS/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            //导航切换
+            $(".menuson li").click(function(){
+                $(".menuson li.active").removeClass("active")
+                $(this).addClass("active");
+            });
+
+            $('.title').click(function(){
+                var $ul = $(this).next('ul');
+                $('dd').find('ul').slideUp();
+                if($ul.is(':visible')){
+                    $(this).next('ul').slideUp();
+                }else{
+                    $(this).next('ul').slideDown();
+                }
+            });
+        })
+    </script>
+
+
+</head>
+
+<body style="background:#f0f9fd;">
+
+<dl class="leftmenu">
+    <volist name="authlist" id="vo">
+    <dd>
+        <if condition="$vo['auth_level'] eq 0">
+        <div class="title">
+            <span><img src="STATIC_ADMIN_IMG/leftico01.png" /></span>{$vo.auth_name}
+        </div>
+        </if>
+        <ul class="menuson">
+            <volist name="authlist" id="vob">
+            <if condition="$vob['pid'] eq $vo['auth_id']">
+            <li><cite></cite><a href="__ROOT__/index.php/{$vob.auth_controller}/{$vob.auth_action}" target="rightFrame">{$vob.auth_name}</a><i></i></li>
+            </if>
+            </volist>
+        </ul>
+    </dd>
+    </volist>
+</dl>
+
+</body>
+</html>

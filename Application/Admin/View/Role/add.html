@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>添加角色</title>
+    <link href="STATIC_ADMIN_CSS/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="STATIC_ADMIN_JS/jquery.js"></script>
+</head>
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="/">首页</a></li>
+        <li><a href="__URL__/index">角色列表</a></li>
+        <li><a href="__URL__/add">添加角色</a></li>
+    </ul>
+</div>
+
+<div class="formbody">
+
+    <div class="formtitle"><span>基本信息</span></div>
+
+    <ul class="forminfo">
+        <li><label>角色名称</label><input name="role_name" id="role_name" type="text" class="dfinput" /><i>简洁明了，不易过长</i><span class="errorinfo"></span></li>
+        <li><label>职责描述</label><textarea name="role_info" id="role_info" class="dfinput" ></textarea></li>
+        <li>
+            <label>拥有权限</label>
+            <div  style="width:337px;height:300px;margin-left: 86px;padding:5px;border: 1px solid #CED9DF;OVERFLOW: scroll; scrollbar-face-color:#70807d; scrollbar-arrow-color:#ffffff; scrollbar-highlight-color:#ffffff; scrollbar-3dlight-color:#70807d; scrollbar-shadow-color:#ffffff; scrollbar-darkshadow-color:#70807d; scrollbar-track-color:#ffffff;">
+                <ul>
+                <volist name="authlist" id="vo">
+                    <php>
+                        $str=str_repeat("　　",$vo['auth_level']);
+                    </php>
+                        <li>{$str}<input onchange="checkaction({$vo.auth_id});" type="checkbox" name="roleauth" class="auth_{$vo.auth_id}" title="{$vo.auth_controller}-{$vo.auth_action}" value="{$vo.auth_id}"/>{$vo.auth_name}</li>
+                </volist>
+                </ul>
+            </div>
+        </li>
+        <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认添加" onclick="submitadd();"/></li>
+    </ul>
+
+
+</div>
+<include file="Public:tipinfo" />
+</body>
+<script>
+    function submitadd(){
+        var role_name=$('#role_name').attr('value');
+        var role_info=$('#role_info').attr('value');
+        var role_auth_ids= "";
+        var role_auth_ca= "";
+        $('input:checkbox[name=roleauth]:checked').each(function(i){
+            if(0==i){
+                role_auth_ids = $(this).val();
+                role_auth_ca = $(this).attr('title');
+            }else{
+                role_auth_ids += (","+$(this).val());
+                role_auth_ca += (","+$(this).attr('title'));
+            }
+        });
+        if(role_name==""){$('#role_name').parent().find('.errorinfo').html('角色名称不能为空');return;}
+        $.post("__URL__/add",{'role_name':role_name,'role_info':role_info,'role_auth_ids':role_auth_ids,'role_auth_ca':role_auth_ca},function(data){
+            if(data==1){
+                showtip('添加角色成功');
+                location.reload();
+            }
+            if(data==0){
+                showtip('添加角色失败');
+            }
+
+        })
+    }
+
+    function checkaction(n){
+        var classname=".auth_"+n;
+        if($(classname).attr('checked')){
+            $.post('__URL__/checkaction',{'auth_id':n},function(data){
+               var idsarr=data.split(',');
+               for(var i=0;i<idsarr.length;i++){
+                    $('.auth_'+idsarr[i]).attr('checked','checked');
+               }
+            })
+        }else{
+            $.post('__URL__/checkaction',{'auth_id':n},function(data){
+                var idsarr=data.split(',');
+                for(var i=0;i<idsarr.length;i++){
+                    $('.auth_'+idsarr[i]).attr('checked','');
+                }
+            })
+        }
+    }
+
+</script>
+</html>

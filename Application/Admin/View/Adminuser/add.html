@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>添加管理员</title>
+    <link href="STATIC_ADMIN_CSS/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="STATIC_ADMIN_JS/jquery.js"></script>
+</head>
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="/">首页</a></li>
+        <li><a href="__URL__/index">管理员列表</a></li>
+        <li><a href="__URL__/add">添加管理员</a></li>
+    </ul>
+</div>
+
+<div class="formbody">
+
+    <div class="formtitle"><span>基本信息</span></div>
+
+    <ul class="forminfo">
+        <li><label>人员名称</label><input name="mg_name" id="mg_name" type="text" class="dfinput" /><i>简洁明了，不易过长</i><span class="errorinfo"></span></li>
+        <li>
+            <label>所属角色</label>
+            <select name="mg_role_id" id="mg_role_id" class="dfinput">
+                <option value="0">请选择</option>
+                <volist name="rolelist" id="vo">
+                    <option value="{$vo.role_id}">{$vo.role_name}</option>
+                </volist>
+            </select>
+            <span class="errorinfo"></span>
+        </li>
+        <li>
+            <label>状　　态</label>
+            <div style="position: relative;top:10px;">
+                <input type="radio" name="mg_status"  value="1" checked="checked"/>开启
+                &nbsp;&nbsp;
+                <input type="radio" name="mg_status"  value="0"/>关闭
+            </div>
+        </li>
+        <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认添加" onclick="submitadd();"/></li>
+    </ul>
+
+
+</div>
+<include file="Public:tipinfo" />
+</body>
+<script>
+    function submitadd(){
+        var mg_name=$('#mg_name').attr('value');
+        var mg_role_id=$('#mg_role_id').attr('value');
+        var mg_status=$('input[name="mg_status"]:checked').attr('value');
+        if(mg_name==""){$('#mg_name').parent().find('.errorinfo').html('人员名称不能为空');return;}
+        if(mg_role_id==0){$('#mg_role_id').parent().find('.errorinfo').html('所属角色必须选择');return;}
+        $.post("__URL__/add",{'mg_name':mg_name,'mg_role_id':mg_role_id,'mg_status':mg_status},function(data){
+            if(data==1){
+                showtip('添加人员成功');
+                location.reload();
+            }
+            if(data==0){
+                showtip('添加人员失败');
+            }
+
+        })
+    }
+</script>
+</html>

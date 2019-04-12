@@ -1,0 +1,245 @@
+[ 2016-08-17T15:30:05+08:00 ] 127.0.0.1 /index.php/Adminuser/index
+ERR: 无法加载控制器:Adminuser
+
+[ 2016-08-17T15:47:26+08:00 ] 127.0.0.1 /index.php/auth/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004835s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1 and pid=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002975s ]
+
+[ 2016-08-17T15:47:42+08:00 ] 127.0.0.1 /index.php/auth/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005196s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1 and pid=1  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003224s ]
+
+[ 2016-08-17T15:49:31+08:00 ] 127.0.0.1 /index.php/auth/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004507s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1 and pid=1  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003177s ]
+
+[ 2016-08-17T15:51:26+08:00 ] 127.0.0.1 /index.php/auth/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005549s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1 and pid=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003487s ]
+
+[ 2016-08-17T15:53:52+08:00 ] 127.0.0.1 /index.php/auth/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003619s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1 and pid=1  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003451s ]
+
+[ 2016-08-17T16:25:23+08:00 ] 127.0.0.1 /index.php/auth/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005332s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1 and pid=1  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004026s ]
+
+[ 2016-08-17T16:25:32+08:00 ] 127.0.0.1 /index.php/auth/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005076s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1 and pid=11  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003626s ]
+
+[ 2016-08-17T16:32:47+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005789s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003333s ]
+
+[ 2016-08-17T16:32:52+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004304s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002946s ]
+
+[ 2016-08-17T16:32:56+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004118s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003342s ]
+
+[ 2016-08-17T16:32:58+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003390s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003094s ]
+
+[ 2016-08-17T16:33:01+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004312s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002873s ]
+
+[ 2016-08-17T16:33:13+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004147s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003292s ]
+
+[ 2016-08-17T16:33:50+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004147s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002801s ]
+
+[ 2016-08-17T16:33:56+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004573s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003372s ]
+
+[ 2016-08-17T16:34:00+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003640s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003341s ]
+
+[ 2016-08-17T16:34:02+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003580s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003462s ]
+
+[ 2016-08-17T16:34:10+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003693s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003376s ]
+
+[ 2016-08-17T17:08:04+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004280s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003098s ]
+
+[ 2016-08-17T17:08:08+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003548s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002916s ]
+
+[ 2016-08-17T17:08:10+08:00 ] 127.0.0.1 /index.php/role/checkaction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004040s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `wym_auth` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `wym_auth` WHERE auth_status=1  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002849s ]
+
+[ 2016-08-17T17:08:16+08:00 ] 127.0.0.1 /index.php/role/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004364s ]
+SQL: SHOW COLUMNS FROM `wym_role` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `wym_role` [ RunTime:0.0082s ]
+SQL: INSERT INTO `wym_role` (`role_name`,`role_info`,`role_auth_ids`,`role_auth_ca`) VALUES ('系统研发管理员','处理权限列表及相关操作','1,11,14,16','-,Auth-index,Auth-add,Auth-delete') [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002924s ]
+

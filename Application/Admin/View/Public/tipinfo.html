@@ -1,0 +1,31 @@
+<div id="messagebg_tipinfo" style="position:fixed;z-index: 10001;display: none;width:100%;height:100%;left:0;top:0;background:#000;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5; opacity: 0.5;"></div>
+<div id="messagetip_tipinfo" style="width:340px;height:200px;position:fixed;z-index: 10002;background: #fff;display: none;margin-right:20px;border-radius:4px;">
+    <div class="tiptop"><span>提示信息</span><a onclick="closetip();"></a></div>
+    <div id="message_tipinfo" style="line-height: 30px;text-align: center;margin-top: 45px;font-size: 14px;color:#4D4D4D;"></div>
+    <div>
+        <div class="but" onclick="closetip();" style="width:120px;height: 30px;line-height: 30px;text-align: center;float: left;background: #C9D0D3;color: white;margin-left:110px;;cursor: pointer;border-radius:4px;font-size:16px;margin-top:40px;">知道了</div>
+        <div style="clear:both; font-size: 0; height: 0; line-height: 0;"></div>
+    </div>
+</div>
+
+
+<script>
+    function showtip(message){
+        $("#message_tipinfo").html(message);
+        var width=$(window).width();
+        var height=$(window).height();
+        var newwidth=width-300;
+        var newheight=height-150;
+        var marginleft=newwidth/2+"px";
+        var margintop=(newheight/2)-100+"px";
+        $("#messagetip_tipinfo").css({"top":margintop,"left":marginleft});
+        $("#messagetip_tipinfo").css("display","block");
+        $("#messagebg_tipinfo").css("display","block");
+
+    }
+
+    function closetip(){
+        $("#messagetip_tipinfo").css("display","none");
+        $("#messagebg_tipinfo").css("display","none");
+    }
+</script>
